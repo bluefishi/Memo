@@ -1,0 +1,17 @@
+﻿<% include header.html %>
+<br>
+<%- message %>
+<h1> <p class="text-center">欢迎使用<%= title %>!</p> </h1>
+<p class="text-right"><a href="/home">主页</a></p>
+<legend></legend>
+<ul>
+<li><p class="text-primary">这个小应用是使用JavaScript语言开发，用到的框架有BootStrap、AngularJS。</p></li>
+<li><p class="text-primary">部署在Bluemix平台上，应用地址为：<a href="https://math-test.eu-gb.mybluemix.net">https://math-test.eu-gb.mybluemix.net</a></p></li>
+<li><p class="text-primary">登录用户名：admin  密码：admin  用户名和密码使用session-mongoose保存在MongoDB中。</p></li>
+<li><p class="text-primary">备忘录内容录入后实时显示在页面中，存入MongoDB的部分尚未完成。</p></li>
+
+<li><p class="text-info">MongoDB已经连通，写了两个简单的插入和查询API：<a href="https://math-test.eu-gb.mybluemix.net/api/insertMessage">插入一条消息</a> 和 <a href="https://math-test.eu-gb.mybluemix.net/api/render">查看插入内容</a></p></li>
+
+<button type="button" class="btn btn-primary" ><a href="/login">登录系统</a></button> 
+
+<% include footer.html %>

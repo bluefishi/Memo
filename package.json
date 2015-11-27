@@ -1,0 +1,21 @@
+{
+	"name": "NodejsStarterApp",
+	"version": "0.0.1",
+	"description": "A sample nodejs app for Bluemix",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"mongodb": "~2.0.25",
+		"express": "3.2.2",
+		"ejs": "0.8.4",
+		"mongoose": "3.6.10",
+		"session-mongoose": "0.2.2",
+		"supervisor": "0.5.2",
+		"angular": "1.4.8"
+	},
+	"repository": {},
+	"engines": {
+		"node": "0.12.x"
+	} 
+}

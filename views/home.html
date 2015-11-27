@@ -1,0 +1,33 @@
+﻿<% include header.html %>
+
+<div ng-app="myApp" ng-controller="todoCtrl">
+<div class="panel panel-primary">
+   <div class="panel-heading">
+      <h3 class="panel-title">我的备忘录</h3>
+	  <%= user.username %>, 欢迎登陆!<a claa="btn" href="/logout">退出</a>
+   </div>
+   <div class="panel-body">
+	 
+<form ng-submit="todoAdd()">
+    <input type="text" ng-model="todoInput" size="50" placeholder="新增(字数50字内)" required autofocus>
+	<input type="date" ng-model="todoDate" required>
+    <input type="submit" value="新增">
+</form>
+
+<br>
+
+<div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>, 
+	<span ng-bind="x.todoDate" style='color:red'></span>, <span ng-bind="x.createDate"></span>
+</div>
+
+<p><button ng-click="remove()">删除记录</button></p>
+     
+   </div>
+</div>
+	
+</div>
+
+<script src="/javascripts/controller.js"></script>
+<% include footer.html %>
+			
